@@ -1,0 +1,55 @@
+html,
+body {
+    overflow: hidden;
+}
+
+body,
+textarea {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    margin: 0px;
+    text-decoration: none;
+}
+
+span {
+    width: 100%;
+    text-align: center;
+}
+
+textarea {
+    width: 100%;
+    padding: 0px;
+    color: #000;
+    border: none;
+    outline: none;
+    resize: vertical;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #CBCBCB;
+    ;
+    border-radius: 5px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0px;
+    background: none;
+    color: inherit;
+    border: none;
+    outline: none;
+    font: inherit;
+    cursor: pointer;
+}
+
+object {
+    pointer-events: none;
+}

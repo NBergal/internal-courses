@@ -1,0 +1,142 @@
+.list,
+#accountMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 258px;
+    max-height: calc(100vh - 174px);
+    padding: 12px;
+    color: #000;
+    background: #EBECF0;
+    border-radius: 10px;
+    margin-right: 24px;
+}
+
+#accountMenu {
+    display: block;
+    position: relative;
+    top: 28px;
+    right: 128px;
+    height: 236px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.list__header,
+.list__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+}
+
+.list__header {
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.list__header__inner {
+    padding-right: 12px;
+}
+
+.list__header span,
+.list__footer span {
+    text-align: left;
+}
+
+.more-menu_open {
+    position: absolute;
+    top: 38px;
+    right: -116px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    width: 282px;
+    color: #000;
+    background: #CBCBCB;
+    border-radius: 10px;
+}
+
+.more-menu_open::before {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    left: 114px;
+    top: -12px;
+    border-bottom: 14px solid #CBCBCB;
+    border-right: 27px solid transparent;
+    border-left: 27px solid transparent;
+    border-top: 0px;
+}
+
+.more-menu_open__inner {
+    padding: 10px;
+}
+
+.button_more {
+    padding-right: 12px;
+}
+
+.more-svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+    padding: 4px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.more-svg:hover {
+    background: #CBCBCB;
+}
+
+.list__container {
+    height: 100%;
+    width: calc(100% - 6px);
+    overflow-y: auto;
+}
+
+.task,
+.itemMenu {
+    line-height: 21px;
+    border-radius: 5px;
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+    padding: 7px 8px;
+    transition: 0.2s;
+    margin-bottom: 15px;
+}
+
+.task:hover,
+.itemMenu:hover {
+    background: #d8d8d8;
+}
+
+.list__footer {
+    justify-content: center;
+    color: #5E6C84;
+    width: 100%;
+    transition: 0.2s;
+}
+
+.list__footer:hover {
+    padding-left: 10px;
+}
+
+.plusCard {
+    margin-right: 8px;
+}
+
+p {
+    margin: 0px;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./src/style.css" />
+    <title>Awesome Kanban Board</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <div class="logo-svg">
+                <object type="image/svg+xml" data="src/images/header/logo.svg">
+                    <img src="src/images/header/logo.png" alt="logo">
+                </object>
+            </div>
+            <div class="title">
+                Awesome Kanban Board
+            </div>
+        </div>
+        <div class="header__menu">
+            <div button id="buttonCreate" onclick="window.location.href='#modalWindow'" class="button_new-list">
+                <div class="button_new-list__inner">
+                    <div class="add-svg">
+                        <object type="image/svg+xml" data="src/images/header/add.svg">
+                            <img src="src/images/header/add.png" alt="add">
+                        </object>
+                    </div>
+                    <span>Create new list</span>
+                </div>
+            </div>
+            <div id="modalWindow">
+                <div id="modalBody">
+                    <h2 id="modalHeader">Create new list</h2>
+                    <label for="titleList">Enter the title</label>
+                    <input id="titleList" type="text">
+                    <button id="create">
+                        <span>Create</span>
+                    </button>
+                </div>
+                <a href="#" class="modalFull"></a>
+            </div>
+            <div id="modalWindow2">
+                <div id="modalBody3">
+                </div>
+                <a href="#" class="modalFull"></a>
+            </div>
+            <div class="user-menu">
+                <div class="button_user-menu">
+                    <div id="user-svg">
+                        <object type="image/svg+xml" data="src/images/header/user.svg">
+                            <img src="src/images/header/user.png" alt="user">
+                        </object>
+                    </div>
+                </div>
+                <div id="button_open-menu">
+                    <div id="arrow-svg">
+                        <object type="image/svg+xml" data="src/images/header/arrowDown.svg">
+                            <img src="src/images/header/arrowDown.png" alt="open menu">
+                        </object>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="boards">
+        <div id="boards__inner">
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="tasks-status">
+            <div class="tasks-status_active">
+                Active tasks: &#60;N&#62;
+            </div>
+            <div class="tasks-status_finished">
+                Finished tasks: &#60;N&#62;
+            </div>
+        </div>
+        <div class="copyright">
+            Kanban board by Nikita Vasilyev, 2020
+        </div>
+    </footer>
+</body>
+<script type="module" src="./src/script.js"></script>
+
+</html>

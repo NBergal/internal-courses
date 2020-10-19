@@ -1,0 +1,33 @@
+.dropdown {
+    padding-bottom: 15px;
+}
+
+.dropdown__inner {
+    list-style-type: none;
+    margin: 0px;
+    padding: 12px;
+    border-radius: 10px;
+    background: #CBCBCB;
+}
+
+.dropdown__item {
+    padding-bottom: 15px;
+}
+
+.dropdown__item__inner {
+    line-height: 21px;
+    border-radius: 5px;
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+    padding: 7px 8px;
+    transition: 0.2s;
+}
+
+.dropdown__item__inner:hover {
+    background: #d8d8d8;
+}
+
+.dropdown__item:last-of-type {
+    padding-bottom: 0px;
+}

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import './css/general.css';
+@import './css/header.css';
+@import './css/menu.css';
+@import './css/board.css';
+@import './css/card.css';
+@import './css/dropdown.css';
+@import './css/footer.css';
+@import './css/modalWindow.css';
+
+.hide {
+    display: none;
+}
+
+.hovered {
+    background: #b1b1b3;
+}
+
+@media screen and (max-width: 696px) {
+    .title {
+        font-size: 0.8em;
+    }
+
+    .button_new-list {
+        font-size: 0.8em;
+        width: 140px;
+    }
+
+    #boards__inner {
+        flex-direction: column;
+        align-items: center;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .list {
+        margin-right: 0px;
+        margin-bottom: 24px;
+    }
+
+    .tasks-status {
+        padding: 0px 10px;
+    }
+}

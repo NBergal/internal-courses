@@ -1,0 +1,46 @@
+.button_user-menu,
+#button_open-menu,
+.menu-item__inner {
+    line-height: 21px;
+    border-radius: 5px;
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+.button_user-menu {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#button_open-menu {
+    display: flex;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: transparent;
+    transition: 0.2s;
+}
+
+#button_open-menu:hover {
+    background: #CBCBCB;
+}
+
+.menu-item {
+    padding-bottom: 15px;
+}
+
+.menu-item:last-of-type {
+    padding-bottom: 0px;
+}
+
+.menu-item__inner {
+    padding: 7px 8px;
+    transition: 0.2s;
+}
+
+.menu-item__inner:hover {
+    background: #d8d8d8;
+}

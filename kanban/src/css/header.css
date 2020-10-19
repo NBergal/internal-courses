@@ -1,0 +1,130 @@
+@keyframes arrowDown {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes arrowUp {
+    0% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#arrow-svg {
+    pointer-events: none;
+}
+
+.header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 55px;
+    background: #0067a3;
+}
+
+.header__logo,
+.header__menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0px 14px;
+    line-height: 21px;
+}
+
+.logo-svg {
+    height: 45px;
+    width: 45px;
+}
+
+.title {
+    padding: 0px 8px;
+    font-size: 1.56em;
+}
+
+.header__menu {
+    justify-content: space-between;
+    width: 294px;
+    padding: 0px;
+}
+
+.button_new-list {
+    display: flex;
+    width: 181px;
+    height: 33px;
+    padding: 0px;
+    transition: 0.2s;
+    line-height: 21px;
+    border-radius: 5px;
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+.button_new-list:hover {
+    background: #CBCBCB;
+}
+
+.button_new-list__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 5px 9px;
+}
+
+.add-svg {
+    width: 22px;
+    height: 22px;
+    pointer-events: none;
+}
+
+.user-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-menu_open {
+    position: absolute;
+    top: 55px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    width: 282px;
+    color: #000;
+    background: #EBECF0;
+    border-radius: 10px;
+}
+
+.user-menu_open__inner {
+    padding: 10px;
+}
+
+.menu {
+    padding: 0px;
+    list-style-type: none;
+    margin: 0px;
+}
+
+#user-svg {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+}
